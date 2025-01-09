@@ -11,23 +11,12 @@ using namespace std;
 
 int camelcase(string s)
 {
-    if (s.Empty()) return 1;
-
-    int result = 1;
-    foreach (var c in s )
-    {
-        if (std::isupper()) result++;
-    }
-
-    return result;
-    
-    
+    if (s.empty()) return 0;
     
     int result = 1;
-    
-    for (int i = 0; i < s.length(); ++i)
+    for (char c : s)
     {
-        if (std::isupper(s[i]) != 0)
+        if (std::isupper(c))
         {
             result++;
         }
@@ -35,6 +24,7 @@ int camelcase(string s)
     
     return result;
 }
+
 
 int main()
 {
