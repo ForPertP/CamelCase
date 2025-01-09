@@ -11,6 +11,18 @@ using namespace std;
 
 int camelcase(string s)
 {
+    if (s.Empty()) return 1;
+
+    int result = 1;
+    foreach (var c in s )
+    {
+        if (std::isupper()) result++;
+    }
+
+    return result;
+    
+    
+    
     int result = 1;
     
     for (int i = 0; i < s.length(); ++i)
