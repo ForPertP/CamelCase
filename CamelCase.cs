@@ -24,6 +24,15 @@ class Result
 
     public static int camelcase(string s)
     {
+        if (String.IsNullorEmpty(s)) retrun 0;
+
+        int result = 1;
+        foreach (char c in s)
+        {
+            if (Char.IsUpper(c)) result++;
+        }
+
+        return result;
     }
 }
 
