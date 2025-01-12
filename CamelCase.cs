@@ -27,7 +27,7 @@ class Result
         if (string.IsNullOrEmpty(s)) return 0;
 
         int result = 1;
-        foreach (char c in s )
+        foreach (char c in s)
         {
             if (char.IsUpper(c)) result++;
         }
