@@ -24,12 +24,12 @@ class Result
 
     public static int camelcase(string s)
     {
-        if (String.IsNullorEmpty(s)) retrun 0;
+        if (string.IsNullOrEmpty(s)) return 0;
 
         int result = 1;
-        foreach (char c in s)
+        foreach (char c in s )
         {
-            if (Char.IsUpper(c)) result++;
+            if (char.IsUpper(c)) result++;
         }
 
         return result;
