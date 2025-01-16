@@ -20,13 +20,21 @@ class Result {
      */
 
     public static int camelcase(String s) {
-    // Write your code here
+        if (s == null || s.isEmpty()) return 0;
 
+        int result = 1; 
+        for (char c : s.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                result++;
+            }
+        }
+
+        return result;
     }
-
 }
 
-ublic class Solution {
+
+public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
